@@ -30,7 +30,7 @@ services:
       - node
 
   mysql:
-    image: anolis-registry.cn-zhangjiakou.cr.aliyuncs.com/openanolis/mysql:8.0.34
+    image: anolis-registry.cn-zhangjiakou.cr.aliyuncs.com/openanolis/mysql:8.6
     container_name: hono-mysql
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
