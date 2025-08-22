@@ -30,7 +30,7 @@ services:
       - node
 
   mysql:
-    image: anolis-registry.cn-zhangjiakou.cr.aliyuncs.com/openanolis/mysql:8.6
+    image: registry.cn-hangzhou.aliyuncs.com/fubd_own/mysql:8
     container_name: hono-mysql
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
@@ -53,7 +53,7 @@ services:
       start_period: 30s
 
   redis:
-    image: anolis-registry.cn-zhangjiakou.cr.aliyuncs.com/openanolis/redis:7.0.11
+    image: registry.cn-hangzhou.aliyuncs.com/fubd_own/redis:7
     container_name: hono-redis
     volumes:
       - redis-data:${REDIS_DATA_CONTAINER}
